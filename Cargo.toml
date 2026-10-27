@@ -1,0 +1,23 @@
+[package]
+name = "kzpic"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/b42h4n/kzpic"
+
+[dependencies]
+flate2 = "1"
+image = "0.25"
+minifb = { version = "0.27", optional = true }
+
+[features]
+viewer = ["dep:minifb"]
+
+[[bin]]
+name = "kzpic"
+path = "src/main.rs"
+
+[[bin]]
+name = "kzpic-view"
+path = "src/bin/view.rs"
+required-features = ["viewer"]
