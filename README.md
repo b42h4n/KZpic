@@ -20,7 +20,7 @@ The format combines ideas from PNG, JPEG and WebP:
 
 Every stage can be turned on or off, and the compression level is adjustable.
 
-> This is a learning and experimental project. The format may change between versions.
+> The format may change between versions.
 
 ## Building
 
@@ -177,7 +177,6 @@ The data layout depends on the mode:
 - RGB only, no transparency (the alpha channel is dropped).
 - A palette is only effective for photos with noticeable quantization (`--quant` of 8 or more).
 - The grid upscaling does not add detail; it is a smoothed enlargement.
-- `--quant 1` is lossless only when the file is opened with `--upscale 1` and without blur.
 
 ## Dependencies
 
