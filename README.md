@@ -1,5 +1,11 @@
-# KZpic
+<p align="center">
+  <h1 align="center">KZpic</h1>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Rust-orange?logo=rust&style=for-the-badge" alt="Rust" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT" />
+</p>
 An experimental image format, `.kzpic`, with a command-line tool and a small image viewer, written in Rust.
 
 The format combines ideas from PNG, JPEG and WebP:
