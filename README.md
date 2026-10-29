@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Language-Rust-orange?logo=rust&style=for-the-badge" alt="Rust" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT" />
 </p>
-An experimental image format, `.kzpic`, with a command-line tool and a small image viewer, written in Rust.
+.kzpic image format, with a command-line tool and a minimal image viewer, written in Rust.
 
 The format combines ideas from PNG, JPEG and WebP:
 
@@ -15,8 +15,8 @@ The format combines ideas from PNG, JPEG and WebP:
 | Short references to identical and similar colors | PNG | Palette: each color is stored once, pixels store only an index |
 | Imprecise color encoding | JPEG | Channel quantization with a configurable step |
 | Predicting color from neighbors | WebP | MED predictor, only the prediction error is stored |
-| Edge blurring | — | 3×3 filter applied when the file is opened |
-| NxN grid around every pixel | — | Bilinear upscaling applied when the file is opened |
+| Edge blurring | Own idea | 3×3 filter applied when the file is opened |
+| NxN grid around every pixel | Own idea | Bilinear upscaling applied when the file is opened |
 
 Every stage can be turned on or off, and the compression level is adjustable.
 
